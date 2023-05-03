@@ -35,4 +35,3 @@ class ZbCNN(nn.Module):
             x = x.unsqueeze(1)
         x = self.classifier(self.flatten(self.quadrant_pooling(self.net(x))))
         return x
-tmp = ZbCNN()
